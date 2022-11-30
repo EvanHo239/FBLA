@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>KxE</title>
+  <title>Kaigo</title>
   <!-- bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   <!-- bootstrap javascript -->
@@ -22,7 +22,7 @@
   <section id="navbar" class="fixed-top">
     <div class="container-fluid">
       <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href=""><img src="images/Logo.png" style="width: 40px; margin-right: 10%">Kaizen x Ego</a>
+        <a class="navbar-brand" href=""><img src="images/Logo.png" style="width: 40px; margin-right: 10%">Kaigo</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -36,6 +36,9 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#title">Top</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Subscribe</a>
             </li>
           </ul>
         </div>
@@ -54,25 +57,18 @@
     <div class="left-side col-lg-6">
       <h1>Pomodoro</h1>
       <div class="first-box border-elevation timer-container">
-        <div class="timer">
-            <div class="countdown-container">
-                <div class="days-c">
-                  <p class="big-text" id="days"></p>
-                  <span>Days</span>
-                </div>
-                <div class="hours-c">
-                  <p class="big-text" id="hours"></p>
-                  <span>Hours</span>
-                </div>
-                <div class="minutes-c">
-                  <p class="big-text" id="minutes"></p>
-                  <span>Minutes</span>
-                </div>
-                <div class="seconds-c">
-                  <p class="big-text" id="seconds"></p>
-                  <span>Seconds</span>
-                </div>
+        <div class="timer-container">
+          <div class="outerRing">
+            <div class="timer">
+              <div id="time">
+                <span id="minutes">25</span>
+                <span id="colon">:</span>
+                <span id="seconds">00</span>
               </div>
+              <div id="stsp">START</div>
+              <span id="setting"><i class="fas fa-cog"></i></span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -103,7 +99,7 @@
       <i class="social-media-icons fa-brands fa-facebook-f"></i>
       <i class="social-media-icons fa-brands fa-instagram"></i>
       <i class="social-media-icons fa-solid fa-envelope"></i>
-      <p>© Copyright Raizen x Ego</p>
+      <p>© Copyright Kaigo</p>
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="index.js" charset="utf-8"></script>
